@@ -66,4 +66,4 @@ print("[*] Capture done. Logs saved to logs.json")
 # Phase 7: auto-start Inshaal's detection engine
 import subprocess
 print("[*] Launching detection engine...")
-subprocess.run(["python", "main.py"])
+subprocess.run(["python", "engine.py"])
