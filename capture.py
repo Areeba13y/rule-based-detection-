@@ -55,15 +55,12 @@ def process_packet(pkt):
         "event": event
     }
 
-    print(f"[LOG] {log['source_ip']} → port {port} | {event}")
+    print(f"[LOG] {src_ip} -> port {port} | {event}", flush=True)
     save_log(log)
 
 # Phase 6: run for 60 seconds then stop
 print("[*] Starting capture for 60 seconds...")
 sniff(prn=process_packet, store=0, timeout=60)
+print("-" * 30, flush=True)
 print("[*] Capture done. Logs saved to logs.json")
-
-# Phase 7: auto-start Inshaal's detection engine
-import subprocess
-print("[*] Launching detection engine...")
-subprocess.run(["python", "engine.py"])
+print("-" * 30, flush=True)
