@@ -1,6 +1,6 @@
-**# rule-based-detection-**
+**# Rule-Based-IDS-**
 
-**👾 Description****
+**👾 Description**
 A rule-based Intrusion Detection System (IDS) with:
   1. Packet capture
   2. Log parsing
@@ -11,9 +11,9 @@ A rule-based Intrusion Detection System (IDS) with:
 
 **🚀 Installation & Setup****
 
-Clone or download project : run the following command 
-_git clone https://github.com/Areeba13y/rule-based-detection-_
-cd to directory where downloaded
+Clone or download project : run the following command
+1. _git clone https://github.com/Areeba13y/rule-based-detection-_
+2. Cd to directory where downloaded
 
 1️⃣ Install Dependencies
 pip install scapy
